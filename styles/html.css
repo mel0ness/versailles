@@ -1,0 +1,35 @@
+/* || HTML */
+
+html, body {
+  margin: 0;
+  padding: 0;
+    color: white;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    color: inherit;
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    background-image: linear-gradient(45deg, #2c2c35 25%,  #535762 25% 50%, #72798c 50% 75%, #a5aab5 75%);
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+
+body, main, article, section {
+  max-width: 100vw;
+  margin: 0 ;
+ 
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid #f9b942;
+}

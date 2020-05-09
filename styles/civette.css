@@ -1,0 +1,193 @@
+
+hr {
+    position: relative;
+}
+
+main {
+        border-top: 2px solid #f9b942;
+    border-left: 2px solid #f9b942;
+    border-right: 2px solid #f9b942;
+    margin-top: 5px;
+    margin-left: 16%;
+    margin-right: 5px;
+    border-bottom: 2px solid #f9b942;
+} 
+
+article {
+    display: flex;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+/* float imgs */
+
+.imgright {
+    float: right;
+    min-width: 40%;
+    max-width: 60%;
+}
+
+.imgleft {
+    float: left;
+    max-width: 200px;
+}
+
+
+.tinyimgright {
+    float: right;
+    max-width: 100px;
+}
+
+.imgright2 {
+    float: right;
+    max-width: 200px;
+}
+
+.ulcenter {
+    display: table;
+}
+    
+.imgtable {
+    max-width: 80%;
+}
+
+
+
+
+
+h1, h2, h3 {
+     display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 5px 15px 5px 15px;
+    font-family: bradley hand, cursive;
+  color: #9e0f3b;
+     border-bottom: 1px solid black;
+    border-top: 1px solid black;
+        border-right: 1px solid black;
+    border-radius: 40px 0;
+     background-color: #f9b942;
+    box-shadow: 2px 2px 2px #9e0f3b;
+   
+}
+
+.title {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+aside ul {
+    list-style-type: none;
+}
+
+aside {
+    float: left;
+    width: 15%;
+    display: inline-block;
+    position: sticky;
+    top: 0;
+
+}
+
+aside a {
+    border-radius: 0;
+    width: 100%;
+
+}
+
+.topback {
+    position: fixed;
+    bottom: 0;
+    width: 12%;
+}
+div, p {
+    margin-left: 5px;
+}
+
+.legal {
+    font-size: 12px;
+}
+
+p {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.center2 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #f9b942;
+    border-collapse: collapse;
+}
+
+.tableeasy {
+    table-layout: fixed;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    text-align: center;
+    border: 2px solid #f9b942;
+    border-collapse: collapse;
+}
+   
+
+td {
+    border: 1px solid #f9b942;
+}
+
+th {
+    border: 2px solid #f9b942;
+}
+
+.wow {
+    background-color: rgba(69, 224, 10, 0.4);
+}
+
+table caption {
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    article {
+        display: block;
+    }
+    
+    aside {
+        display: none;
+    }
+    html {
+        max-width: 94vw;
+    }
+    .logo {
+        max-width: 200px;
+    }
+    .center2 {
+        margin: auto;
+    }
+    img.imgleft, img.imgright, img.tinyimgright, img.imgright2 {
+        max-width: 30%;
+    }
+    table {
+        display: none;
+    }
+    .nonedis {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    body, p {
+        text-align: justify;
+    }
+}
