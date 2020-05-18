@@ -14,56 +14,61 @@
     </head>
     
     <body>
-         <header>
-            <a href="../index.html" title="accueil"><img src="../imgs/si2.png" alt="logo" class="logo"></a>
+          <header>
+            <div><div class="logo"><a href="../index.html" title="accueil"><img src="../imgs/si2.png" alt="logo" class="logo"></a></div></div>
             <nav>
-                <ul><li class="menu">Menu<ul>
+                <ul><li class="menu">Menu <svg height="25px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg><ul>
                     <li><a href="../Cartes/cartes.html" title="cartes">Cartes et offres</a></li>
-                    <li><a>Offres Web</a></li>
+                    <li><a href="../Offres/offres.html" title="Offres du moment">Offres du moment</a></li>
+                    <!--<li><a>Offres Web</a></li>-->
                     <li><a href="../Civette/civette.html" title="civette">Civette</a></li>
                     <li><a href="../Formulaire/Formulaire.html" title="réservation">Formulaire de reservation</a></li>
-                    <li><a href="../Contact/contact.html" title="contact">Contact</a></li>
-                    </ul></li></ul>
+                    
+                    </ul></li><li class="lastchild"><a href="../Contact/contact.html" title="contact">Contact</a></li></ul>
             </nav>
         </header>
         <hr/>
         <main>
             <section>
                 <div class="title"><h1>Carte de fidélité</h1></div>
-                <div><img src="../imgs/fidel.jpg" alt="carte de fidélité" class="imgleft">Tout d'abord avant de vous présenter les offres évolutives de notre établissement, voici la carte de fidélité du Versailles. Pour tout repas pris sur place et par tranche de 10€ vous recevrez un tampon. Et arrivé à 20 tampons vous aurez le droit à un plat offert (Sans limite de choix, sur tous les plats de la carte ou de l'offre quotidienne. Hors formules). Cette carte est trés demandée et n'a pas de limite de temps en terme de validité, n'hésitez pas à la demander!</div>
+                <div class="container"><div class="contained paddin"><img src="../imgs/fidel.jpg" alt="carte de fidélité"></div><div class="txtcontainedright">Tout d'abord avant de vous présenter les offres évolutives de notre établissement, voici la carte de fidélité du Versailles. Pour tout repas pris sur place et par tranche de 10€ vous recevrez un tampon. Et arrivé à 20 tampons vous aurez le droit à un plat offert (Sans limite de choix, sur tous les plats de la carte ou de l'offre quotidienne. Hors formules). Cette carte est trés demandée et n'a pas de limite de temps en terme de validité, n'hésitez pas à la demander!</div></div>
             </section>
             <hr/>
             <section>
                 <div class="title"><h1>Offres évolutives</h1></div>
                 <article>
                     <div class="title"><h2>Happy hour</h2></div>
-                    <p>Notre happy hour est une offre de boissons (bières pressions, bouteilles ou soft) qui se déroule à partir de 15h et jusqu'à la fermeture de l'établissement. Les produits proposés sont souvent modifiés donc n'hésitez pas à les consulter sur cette page ou sur les ardoises disposées dans l'établissement.</p>
+                    <div class="center">Notre happy hour est une offre de boissons (bières pressions, bouteilles ou soft) qui se déroule à partir de 15h et jusqu'à la fermeture de l'établissement. Les produits proposés sont souvent modifiés donc n'hésitez pas à les consulter sur cette page ou sur les ardoises disposées dans l'établissement.</div>
                     <div class="title"><h3>Bières pression</h3></div>
-                    <div><img src="../imgs/pompes.jpg" alt="photo des pompes" class="imgleft"> Nous avons une sélection de 7 bières pression et l'happy hour propose des réduction sur 3 d'entre elles sur le format 50cl. Profitez-en!<br/><ul>
-                        <li>Heineken en 50cl => 5€<br/><img src="../imgs/hk.png" alt="logo hk" class="logo2"></li>
-                        <li>Ciney blonde en 50cl => 5€<br/><img src="../imgs/ciney.png" alt="logo ciney" class="logo2"></li>
-                        <li>Affligem blonde en 50cl => 5€<br/><img src="../imgs/affli.png" alt="logo affli" class="logo2"></li>
+                    <div class="container"><div class="contained full"><img src="../imgs/pompes.jpg" alt="photo des pompes"></div><div class="txtcontainedright full bigfont"> Nous avons une sélection de 7 bières pression et l'happy hour propose des réduction sur 3 d'entre elles sur le format 50cl. Profitez-en!<ul class="blocklist">
+                        <li>Heineken en 50cl => 5€<img src="../imgs/hk.png" alt="logo hk"></li>
+                        <li>Ciney blonde en 50cl => 5€<img src="../imgs/ciney.png" alt="logo ciney"></li>
+                        <li>Affligem blonde en 50cl => 5€<img src="../imgs/affli.png" alt="logo affli"></li>
                         </ul>
-                    </div></article>
+                        </div></div></article>
                     <br/>
                 <article>
                     <div class="title"><h3>Bières bouteille</h3></div>
                     <div class="center">Pour plus de diversité nous vous proposons quelques produits plus spécifiques avec nos bières bouteilles :</div>
-                        <div><ul class="flex"><li class="ib">Charles Quint blonde en 33cl => 4,20€<br/><img src="../imgs/charlesquint.png" alt="logo charles quint" class="bout"></li>
-                            <li class="ib">Tongerlo Lux en 33cl => 4,20€<br/><img src="../imgs/tongerlolux.png" alt="logo tongerlo" class="bout2"></li>
-                            <li class="ib">Super 8 blanche en 33cl => 4,20€<br/><img src="../imgs/super8.png" alt="logo super 8" class="bout"></li>
+                        <div class="container"><ul class="ul3 bigfont"><li>Charles Quint blonde en 33cl => 4,20€<img src="../imgs/charlesquint.png" alt="logo charles quint"></li>
+                            <li>Tongerlo Lux en 33cl => 4,20€<img src="../imgs/tongerlolux.png" alt="logo tongerlo"></li>
+                            <li>Super 8 blanche en 33cl => 4,20€<img src="../imgs/super8.png" alt="logo super 8"></li>
                         </ul></div>
                 </article>
-                <br/>
                 <article>
                     <div class="title"><h3>Soft</h3></div>
                     <div class="center">Et enfin pour les personnes voulant profiter de la soirée et du Happy Hour sans avoir à consommer de l'alcool nous vous proposons: </div>
-                    <div class="center">Le fuze-tea mangue => 2,50€<br/><img src="../imgs/fuze.png" alt="fuzetea"></div>
+                    <div class="center">Le fuze-tea mangue => 2,50€<img src="../imgs/fuze.png" alt="fuzetea" class="soft"></div>
                 </article>
                 <hr/>
                 <div class="legal center"><em>Nous vous rappellons que l'abus d'alcool est dangereux pour la santé, à consommer avec modération</em></div>
             </section>
+            <div class="topback"><a href="./offres.html#" title="retour en haut de page"><svg baseProfile="tiny" height="48px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="48px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12,3.172L5.586,9.586c-0.781,0.781-0.781,2.047,0,2.828s2.047,0.781,2.828,0L10,10.828v7.242c0,1.104,0.895,2,2,2  c1.104,0,2-0.896,2-2v-7.242l1.586,1.586C15.977,12.805,16.488,13,17,13s1.023-0.195,1.414-0.586c0.781-0.781,0.781-2.047,0-2.828  L12,3.172z"/></svg></a></div>
                 </main>
+        <footer>
+            <div class="lastchild2"><a href="./Contact/contact.html" title="contact">Contact</a></div>
+            <div class="centerf foot"><a href="../index.html" title="accueil">Retour à l'accueil</a></div>
+        </footer>
             </body>
         </html>
     
