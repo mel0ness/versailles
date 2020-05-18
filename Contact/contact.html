@@ -5,8 +5,7 @@
     <meta name="description" content="Contact">
     <link rel="stylesheet" href="../styles/html.css">
     <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/liste.css">
-    <link rel="stylesheet" href="../styles/mediaq.css">    
+    <link rel="stylesheet" href="../styles/formulaire.css">  
     <link rel="shortcut icon" href="../imgs/si.ico">
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
@@ -16,24 +15,25 @@
     
     <body>
         <header>
-            <a href="../index.html" title="accueil"><img src="../imgs/si2.png" alt="logo" class="logo"></a>
+            <div><div class="logo"><a href="../index.html" title="accueil"><img src="../imgs/si2.png" alt="logo" class="logo"></a></div></div>
             <nav>
-                <ul><li class="menu">Menu<ul>
+                <ul><li class="menu">Menu <svg height="25px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg><ul>
                     <li><a href="../Cartes/cartes.html" title="cartes">Cartes et offres</a></li>
                     <li><a href="../Offres/offres.html" title="Offres du moment">Offres du moment</a></li>
-                    <li><a>Offres Web</a></li>
+                    <!--<li><a>Offres Web</a></li>-->
                     <li><a href="../Civette/civette.html" title="civette">Civette</a></li>
                     <li><a href="../Formulaire/Formulaire.html" title="réservation">Formulaire de reservation</a></li>
-                    </ul></li></ul>
+                    
+                    </ul></li><li class="lastchild"><a href="../Contact/contact.html" title="contact">Contact</a></li></ul>
             </nav>
         </header>
         <hr/>
         <main>
             <br/><br/>
-            <h1>Demande de contact</h1>
+            <div class="title"><h1>Demande de contact</h1></div>
             <form action="contact.html" method="get">
                 <fieldset>
-                    <legend>Informations du demandeur</legend>
+                    <legend class="legend">Informations du demandeur</legend>
                     <p><label for="name">Nom<strong>*</strong> :</label>
                         <input type="text" id="name" name="name" required></p>
                     <p><label for="firname">Prénom<strong>*</strong> :</label>
@@ -41,7 +41,7 @@
                     <p><label for="email">Email<strong>*</strong> :</label>
                         <input type="email" id="email" name="mail" required></p>
                 </fieldset>
-                <fieldset><legend>Type de votre demande :</legend><label for="kind_demand"></label>
+                <fieldset><legend class="legend">Type de votre demande :</legend><label for="kind_demand"></label>
                 <select id="kind_demand" name="demand" required class="center">
                         <option value="" selected>Veuillez choisir une option</option>
                         <option>Contact commercial</option>
@@ -60,9 +60,11 @@
                 <button type="reset">Effacer la demande</button>
             </form>
             
-            <p style="text-align: center"><em>Les champs "<strong>*</strong>" sont obligatoires.</em></p>
-        <p class="center"><strong><a href="../index.html" title="accueil">Retour à l'accueil</a></strong></p>
+            <p class="center"><em>Les champs "<strong>*</strong>" sont obligatoires.</em></p>
         </main>
+        <footer>
+            <div class="centerf foot"><a href="../index.html" title="accueil">Retour à l'accueil</a></div>
+        </footer>
             </body>
 </html>
         
