@@ -33,3 +33,39 @@ hr {
     border: none;
     border-bottom: 2px solid #f9b942;
 }
+
+h1, h2, h3 {
+     display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 5px 15px 5px 15px;
+    font-family: bradley hand, cursive;
+  color: #9e0f3b;
+     border-bottom: 1px solid black;
+    border-top: 1px solid black;
+        border-right: 1px solid black;
+    border-radius: 40px 0;
+     background-color: #f9b942;
+    box-shadow: 2px 2px 2px #9e0f3b;
+   
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.title {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.topback {
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+}

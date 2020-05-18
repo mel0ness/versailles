@@ -8,26 +8,8 @@
     width: 400px;
 }
 
-
-/*
-* {
-    background-color: grey;
-}
-*/
-/*
-
-header {
-    background-image: radial-gradient(white, grey);
-}
-
-.logo {
-    background-color: transparent;
-}
-*/
-img {
-    width: 400px;
-    padding: 0;
-    
+div.logo {
+    text-align: center;
 }
 
 nav li {
@@ -39,7 +21,7 @@ nav ul {
 }
 
 
-nav li a:hover, aside a:hover{
+nav li a:hover, aside a:hover, footer a:hover{
     color: #f9b942;
     background-color: #9e0f3b;
      border-bottom: 1px solid #9e0f3b;
@@ -48,7 +30,7 @@ nav li a:hover, aside a:hover{
     box-shadow: 2px 2px 2px #f9b942;
 }
 
-nav li a:active{
+nav li a:active, footer a:active, aside a:active {
         color: #f9b942;
     box-shadow: 2px 2px 2px #f9b942 inset;
 }
@@ -62,7 +44,7 @@ nav ul li:hover ul{
     display: block;
 }
 
-nav li a, aside a {
+nav li a, aside a, footer a {
     display: inline-block;
   color: #9e0f3b;
   text-decoration: none;
@@ -100,4 +82,58 @@ nav li a, aside a {
 
 nav ul li a {
     text-decoration: none;
+}
+
+nav ul li ul li {
+    display: inline-block;
+}
+
+.lastchild {
+    float: right;
+    margin-right: 15px;
+}
+
+.lastchild2 {
+    display: none;
+    text-align: center;
+}
+
+svg {
+    fill: #9e0f3b;
+    display: block;
+    margin: auto;
+}
+
+nav ul li:hover svg {
+    fill: white;
+    margin: unset;
+}
+
+.centerf {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    font-family: bradley hand, cursive;
+    font-size: 14px;
+}
+
+.foot {
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+.lastchild {
+    display: none;
+    }
+    .lastchild2 {
+        display: block;
+    }
+    nav ul li ul li {
+    display: block;
+        font-size: 16px;
+}
+    .logo {
+        width: 300px;
+    }
 }

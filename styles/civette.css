@@ -1,8 +1,3 @@
-
-hr {
-    position: relative;
-}
-
 main {
         border-top: 2px solid #f9b942;
     border-left: 2px solid #f9b942;
@@ -14,68 +9,85 @@ main {
 } 
 
 article {
-    display: flex;
-    margin: 10px;
-    margin-bottom: 50px;
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+div {
+    text-align: justify;
+}
+
+.container {
+    display: block;
+    margin-top : 50px;
 }
 
 /* float imgs */
 
-.imgright {
-    float: right;
-    min-width: 40%;
-    max-width: 60%;
-}
-
 .imgleft {
     float: left;
     max-width: 200px;
+    margin: 2px;
 }
 
 
 .tinyimgright {
     float: right;
     max-width: 100px;
+    margin: 2px;
 }
 
 .imgright2 {
     float: right;
     max-width: 200px;
-}
-
-.ulcenter {
-    display: table;
+    margin: 2px;
+    padding-top: 30px;
 }
     
 .imgtable {
     max-width: 80%;
 }
 
-
-
-
-
-h1, h2, h3 {
-     display: inline-block;
+.imgcenter {
     text-align: center;
-    margin: auto;
-    padding: 5px 15px 5px 15px;
-    font-family: bradley hand, cursive;
-  color: #9e0f3b;
-     border-bottom: 1px solid black;
-    border-top: 1px solid black;
-        border-right: 1px solid black;
-    border-radius: 40px 0;
-     background-color: #f9b942;
-    box-shadow: 2px 2px 2px #9e0f3b;
-   
 }
 
-.title {
-    display: block;
+.contained {
+    display: inline-block;
+    width: 50%;
+    height: 200px;
     text-align: center;
-    margin-top: 10px;
 }
+
+div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ulcontained {
+    display: inline-block;
+    height: 200px;
+    position: absolute;
+    padding-right: 5px;
+}
+
+.contained2 {
+    display: inline-block;
+    width: 30%;
+    height: 470px;
+    text-align: center;
+}
+
+.ulcontained2 {
+    display: inline-block;
+    height: 470px;
+    position: absolute;
+    padding-right: 200px;
+}
+/* || Aside et titres */
+
+
 aside ul {
     list-style-type: none;
 }
@@ -92,16 +104,39 @@ aside {
 aside a {
     border-radius: 0;
     width: 100%;
+    margin-bottom: 1px;
 
 }
+
+aside li.deroul ul {
+    display: none;
+}
+
+.deroul {
+    position: relative;
+}
+
+aside li.deroul:hover ul {
+    display: block;
+}
+
+aside svg {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+/* || Suite */
 
 .topback {
     position: fixed;
     bottom: 0;
     width: 12%;
 }
-div, p {
+main div, main p {
     margin-left: 5px;
+    margin-right: 5px;
 }
 
 .legal {
@@ -114,11 +149,15 @@ p {
 
 .center {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.center2 {
-    margin-left: 25%;
-    margin-right: 25%;
+.table1 {
+    display: block;
+}
+.table2 {
+    display: none;
 }
 
 table {
@@ -130,13 +169,9 @@ table {
 }
 
 .tableeasy {
-    table-layout: fixed;
     margin-left: 20%;
     margin-right: 20%;
     width: 60%;
-    text-align: center;
-    border: 2px solid #f9b942;
-    border-collapse: collapse;
 }
    
 
@@ -158,36 +193,56 @@ table caption {
     letter-spacing: 1px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+    aside{
+        display: none;
+    }
     article {
-        display: block;
+        width: 100%;
+    }
+    main {
+        margin-left: 5px;
+    }
+    img.imgleft, img.imgright, img.imgright2 {
+        max-width: 150px;
     }
     
-    aside {
-        display: none;
-    }
-    html {
-        max-width: 94vw;
-    }
-    .logo {
-        max-width: 200px;
-    }
-    .center2 {
-        margin: auto;
-    }
-    img.imgleft, img.imgright, img.tinyimgright, img.imgright2 {
-        max-width: 30%;
-    }
-    table {
-        display: none;
-    }
-    .nonedis {
-        display: none;
-    }
     .hidden {
         display: none;
     }
     body, p {
         text-align: justify;
     }
+}
+
+@media (max-width: 700px) {
+    .table1 {
+        display: none;
+    }
+    .table2 {
+        display: block;
+    }
+    .contained {
+        display: block;
+        height: 300px;
+        width: unset;
+    }
+    .ulcontained {
+        display: block;
+        height: 250px;
+        position: unset;
+    }
+    .contained2 {
+    display: block;
+    width: unset;
+    height: 300px;
+    text-align: center;
+}
+
+.ulcontained2 {
+    display: block;
+    height: 500px;
+    position: unset;
+    padding-right: 5px;
+}
 }

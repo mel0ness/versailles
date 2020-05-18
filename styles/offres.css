@@ -1,75 +1,17 @@
-hr {
-    position: relative;
+main div {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-section {
-    display: block;
-    margin: 10px;
-    margin-bottom: 50px;
+main div.contained {
+    margin: 0;
 }
 
-div {
-    display: block;
-}
-.imgleft {
-    float: left;
-    max-width: 50%;
-    min-width: 40%;
-}
-
-.logo2 {
-    max-width: 40%;
-}
-
-.bout {
-    max-height: 200px;
-    max-width: 50px;
-}
-
-.bout2 {
-    max-height: 200px;
-    max-width: 100px;
-}
-
-h1, h2, h3 {
-     display: inline-block;
-    text-align: center;
+.center {
     margin: auto;
-    padding: 5px 15px 5px 15px;
-    font-family: bradley hand, cursive;
-  color: #9e0f3b;
-     border-bottom: 1px solid black;
-    border-top: 1px solid black;
-        border-right: 1px solid black;
-    border-radius: 40px 0;
-     background-color: #f9b942;
-    box-shadow: 2px 2px 2px #9e0f3b;
-    margin-bottom: 30px;
-   
-}
-
-.title {
-    display: block;
+    max-width: 50%;
     text-align: center;
-    margin-top: 10px;
 }
-
-div, p {
-    margin-left: 5px;
-}
-
-p {
-    text-align: justify;
-}
-
-ul {
-    display: table;
-}
-
-ul li {
-    min-height: 88px;
-}
-
 article {
     display: block;
     margin: 10px;
@@ -77,24 +19,182 @@ article {
     margin-top: 50px;
 }
 
-.flex {
-    display: flex;
-    margin: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.ib {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    text-align: center;
-}
-
-.center {
-    text-align: center;
-}
-
 .legal {
     font-size: 12px;
+}
+
+
+
+.container {
+    display: block;
+    margin: unset;
+}
+
+.txtcontainedright {
+    display: inline-block;
+    height: 300px;
+    position: absolute;
+    padding-top: 50px;
+    text-indent: 50px;
+    text-align: justify;
+    max-width: 50%;
+}
+
+.contained {
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.paddin {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.full {
+    height: 400px;
+    padding: unset;
+}
+
+.bigfont {
+    font-size: 25px;
+}
+
+/* || Images et listes */
+
+div img {
+    max-width: 100%;
+}
+
+div.txtcontainedright.full img {
+    max-width: 30%;
+    max-height: 100px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+
+.blocklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.blocklist li {
+    padding: 30px;
+    padding-top: 50px;
+    position: relative;
+    background-image: url('../imgs/bibine.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 30px 50px;
+}
+
+.ul3 {
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+ul.ul3 li {
+    width: 33%;
+    display: inline-block;
+    max-height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+ul.ul3 li img {
+    max-height: 250px;
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    
+}
+
+.soft {
+    display: block;
+    max-height: 250px;
+    margin: auto;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    div, p {
+        margin: unset;
+    }
+    .txtcontainedright {
+        display: block;
+        height: unset;
+        position: unset;
+        max-width: unset;
+    }
+    .contained {
+        display: block;
+        width: 100%;
+        height: 100px;
+        padding: unset;
+    }
+    .txtcontained {
+        display: block;
+        height: 250px;
+        padding: unset;
+        max-width: unset;
+    }
+    .containedr {
+        display: block;
+        height: 200px;
+        width: unset;
+        position: unset;
+        text-align: center;
+    }
+    .full {
+        height: unset;
+    }
+    div.txtcontainedright.full img {
+    max-width: 30%;
+    max-height: 100px;
+    display: block;
+    position: unset;
+        margin-top: 20px;
+}
+    ul.blocklist li {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    
+    ul.bigfont li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    ul.blocklist li img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bigfont {
+        font-size: 19px;
+    }
+    .ul3 {
+    display: block;
+    max-width: 100%;
+    height: unset;
+}
+
+ul.ul3 li {
+    width: unset;
+    display: block;
+    max-height: unset;
+    position: unset;
+    text-align: center;
+}
+
+ul.ul3 li img {
+    display: block;
+    max-height: 250px;
+    position: unset;
+    margin: auto;
+}
 }

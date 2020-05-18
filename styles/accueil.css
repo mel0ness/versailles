@@ -6,69 +6,99 @@ body {
     max-width: 100%
 }
 
-article img {
+p {
+    text-align: center;
+}
+
+main div, main p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container {
+    display: block;
+}
+
+.ulcontained {
+    display: inline-block;
+    height: 300px;
+    position: absolute;
+    padding-top: 100px;
+}
+
+.txtcontained {
+    display: inline-block;
+    height: 300px;
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 20px;
+    max-width: 50%;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.contained {
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    
+}
+
+.containedr {
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    text-align: center;
+}
+
+div img {
     max-width: 100%;
+    max-height: 100%;
 }
 
-article {
-    display: flex;
-    margin: 10px;
-    margin-bottom: 50px;
-}
-
-.imgright {
-    display: inline-block;
-    float: right;
-    margin-right: 25vw;
-    margin-left: 10vw;
-    margin: 0;
-}
-
-.textimgleft {
-    display: inline-block;
-    float: left;
-    padding-left: 15vw;
-    padding-right: 10px;
-    margin: 5px;
-}
-
-.imgleft {
-    display: block;
-    float: left;
-    min-width: 30vw;
-}
-
-.textimgright {
-    display: block;
-    margin: 5px;
-    text-align: left;
-    padding-top: 50px;
-}
-
-.imgleft2 {
-    float: left;
-    min-width: 20vw;
-    max-width: 30vw;
-    margin-left: 30px;
+div.logo img {
+    max-width: unset;
+    max-height: unset;
 }
 
 
-.imgright2 {
-    float: right;
-    min-width: 20vw;
-    max-width: 30vw;
-}
 
-.txt {
-    padding-top: 20px;
-    padding-left: 10px;
-}
-
-.center2 {
-    margin-left: 25%;
-    margin-right: 25%;
-}
 @media (max-width: 600px) {
-    article {
+    .ulcontained {
         display: block;
+        height: 200px;
+        padding: unset;
+        position: unset;
+        text-align: center;
     }
+    div.ulcontained ul {
+        list-style-type: none;
+    }
+    .contained {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+    .txtcontained {
+        display: block;
+        height: unset;
+        padding: unset;
+        max-width: unset;
+    }
+    .containedr {
+        display: block;
+        height: 200px;
+        width: unset;
+        position: unset;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1900px) {
+    .ulcontained {
+        padding-left: 200px;
+    }
+}
+

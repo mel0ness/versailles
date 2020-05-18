@@ -1,0 +1,153 @@
+fieldset {
+    border: 2px solid #f9b942;
+    text-align: right;
+    display: block;
+}
+
+
+.gender {
+    max-width: 50%;
+    float: right;
+}
+
+.infos2 {
+    width: 100%;
+}
+
+legend {
+    display: block;
+}
+
+.legend {
+    text-align: center;
+}
+
+section {
+    display: block;
+    overflow: hidden;
+}
+
+input, textarea {
+    border: 1px solid #999;
+    color: black;
+    font-family: 'DM Mono', monospace;
+}
+
+textarea {
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 200px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+label span{
+    display: inline-block;
+    width: 250px;
+}
+
+label {
+    text-align: right;
+}
+
+form {
+    margin: auto;
+    padding: auto;
+    width: 500px;
+    max-width: 90%;
+    border: 2px solid #f9b942;
+    font-size: 16px;
+
+}
+
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+select {
+    border-radius: 20px;
+    color: black;
+    padding: 3px;
+    display: inline-block;
+}
+
+textarea, select, option, input[type="text"], input[type="tel"], input[type="email"], input[type="number"], input[type="date"], input[type="time"], input[type="month"] {
+    box-shadow: 1px 1px 2px #c0c0c0 inset;
+}
+
+button {
+    color: #9e0f3b;
+    display: block;
+    margin: auto;
+    width: 200px;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #9e0f3b;
+    margin-bottom: 5px;
+    background-color: #f9b942;
+    border-color: #f9b942;
+}
+
+
+
+button:hover {
+    color: #f9b942;
+    box-shadow: 2px 2px 2px #f9b942;
+    background-color: #9e0f3b;
+}
+
+button :active {
+    color: #f9b942;
+    box-shadow: 2px 2px 2px #f9b942 inset;
+}
+    
+section {
+    padding: 10px;
+}
+
+.infos {
+    font-size: 12px;
+    text-align: center;
+}
+
+.underl {
+    text-decoration: underline;
+}
+
+.center {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    font-family: bradley hand, cursive;
+    font-size: 14px;
+}
+
+.labcenter {
+    margin: auto;
+    width: unset;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    label, input, select {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .gender {
+        float: unset;
+        margin: auto;
+    }
+    textarea {
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 200px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+}
