@@ -18,7 +18,7 @@ html {
 html {
   font-size: 20px;
     font-family: 'Balsamiq Sans', cursive;
-    background: -webkit-linear-gradient(45deg, #2c2c35 25%,  #535762 25% 50%, #72798c 50% 75%, #a5aab5 75%);
+    background: #72798c;
     background-image: linear-gradient(45deg, #2c2c35 25%,  #535762 25% 50%, #72798c 50% 75%, #a5aab5 75%);
     background-size: 100% 100vh;
     background-attachment: fixed;
